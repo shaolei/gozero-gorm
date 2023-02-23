@@ -1,10 +1,11 @@
-package gormc
+package zgorm
 
 import (
-	"gorm.io/gorm/logger"
 	"log"
 	"os"
 	"time"
+
+	"gorm.io/gorm/logger"
 )
 
 type GormLogConfigI interface {

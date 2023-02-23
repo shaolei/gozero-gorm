@@ -1,4 +1,4 @@
-package gormc
+package zgorm
 
 import (
 	"context"
