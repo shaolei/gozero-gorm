@@ -11,7 +11,7 @@ func (m *default{{.upperStartCamelObject}}Model) FindOneBy{{.upperField}}(ctx co
 	switch err {
 	case nil:
 		return &resp, nil
-	case gormc.ErrNotFound:
+	case zgorm.ErrNotFound:
 		return nil, ErrNotFound
 	default:
 		return nil, err
@@ -21,7 +21,7 @@ func (m *default{{.upperStartCamelObject}}Model) FindOneBy{{.upperField}}(ctx co
 	switch err {
 	case nil:
 		return &resp, nil
-	case gormc.ErrNotFound:
+	case zgorm.ErrNotFound:
 		return nil, ErrNotFound
 	default:
 		return nil, err

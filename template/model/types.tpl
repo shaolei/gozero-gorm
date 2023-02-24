@@ -5,7 +5,7 @@ type (
 	}
 
 	default{{.upperStartCamelObject}}Model struct {
-		{{if .withCache}}gormc.CachedConn{{else}}conn *gorm.DB{{end}}
+		{{if .withCache}}zgorm.CachedConn{{else}}conn *gorm.DB{{end}}
 		table string
 	}
 

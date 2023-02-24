@@ -8,7 +8,7 @@ func (m *default{{.upperStartCamelObject}}Model) FindOne(ctx context.Context, {{
 	switch err {
 	case nil:
 		return &resp, nil
-	case gormc.ErrNotFound:
+	case zgorm.ErrNotFound:
 		return nil, ErrNotFound
 	default:
 		return nil, err
@@ -17,7 +17,7 @@ func (m *default{{.upperStartCamelObject}}Model) FindOne(ctx context.Context, {{
 	switch err {
 	case nil:
 		return &resp, nil
-	case gormc.ErrNotFound:
+	case zgorm.ErrNotFound:
 		return nil, ErrNotFound
 	default:
 		return nil, err
